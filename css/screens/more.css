@@ -14,12 +14,13 @@
     margin-bottom: 30px;
     font-size: 15.5px;
     font-weight: bold;
-    color: #090909;
+    color:var(--color-gray__dark);
 }
 
 
 .more-suggestions__icons {
     display: flex;
+    margin-left : 12px;
 }
 
 .more-suggestions__icon {
