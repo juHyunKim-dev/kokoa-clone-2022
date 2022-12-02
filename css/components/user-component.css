@@ -51,6 +51,7 @@
 }
 
 .user-component__time {
+    font-size: 13.5px;
     margin-bottom: 10px;
     display: block;
 }

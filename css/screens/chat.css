@@ -1,0 +1,154 @@
+#chat-screen {
+    background-color: #abc1d1;
+}
+
+.chat-background__color {
+    background-color: #abc1d1;
+}
+
+.main-chat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+
+.chat_timestamp {
+    color: white;
+    font-size: 14px;
+    background-color: #92A4B2;
+    opacity: 0.9;
+    padding: 9px 15px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.message-row img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 8px;
+}
+
+.message__author {
+    font-size: 16.5px;
+    display: block; /* message__author가 span 이니까*/
+    margin-bottom: 8px;
+}
+
+.message__info {
+    display: flex;
+    align-items: end;
+}
+
+
+
+.message__bubble,
+.message__bubble2 {
+    background-color: white;
+    padding : 13px;
+    border-radius: 2px 16px 16px 20px; /* 시계방향대로 적용 */
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.message__bubble2 {
+    margin-bottom: -15px;
+}
+.message-plus {
+    margin-left: 116px;
+}
+.message__time,
+.message__author {
+    color: var(--color-gray__dark);
+    opacity: 0.8;
+}
+
+.message-row__own {
+    justify-content: flex-end;
+}
+
+.message-row__own .message__bubble {
+    background-color: var(--yellow);
+    border-radius: 16px 2px 20px 16px;
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+.message-row__own .message__info {
+    flex-direction: row-reverse;   /* html코드 수정 없이 순서 바꾸기*/
+}
+/* .message-row__own 모디파이어를 기준으로 뒤집는 것*/
+
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+.reply .reply__column:first-child {
+    width: 10%;
+}
+
+.reply .reply__column:last-child {
+    width: 90%;
+    position: relative;
+}
+
+.reply input {
+    height: 27px;
+    width: 100%; /* input에 width를 주기 위해서, reply__column에 먼저 width를 줘야함.*/
+    border: var(--main-border);
+    border-radius: 15px;
+}
+
+.reply input::placeholder { /* 선택자 */
+    padding: 10px;
+    }
+
+.reply i {
+    opacity: 0.5;
+}
+
+.reply__column:last-child > i, /* last-child 안에 i 가 2개이기 때문에 다이렉트로 지정 ( > )*/
+.reply__column:last-child button {
+    position: absolute;
+    right:-3.5px;
+    top: 1.7px;
+}
+
+.reply__column:last-child > i {  /* last-child 안에 i 가 2개이기 때문에 다이렉트로 지정 ( > )*/
+    right: 36px;
+    top: 7px;
+}
+
+.reply__column button {
+    background-color: var(--yellow);
+    border: 0.4px solid rgba(173,156,5,0.2);
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+
+}
+
+.reply__column button i {
+    opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+    outline: none;
+}
