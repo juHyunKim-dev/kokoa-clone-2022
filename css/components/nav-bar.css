@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 .nav__link {
-    position: relative;
+    position: relative; /* position:absolute의 부모*/
     color: #2F363E;
 }
 
@@ -59,4 +59,13 @@
 }
 .nav__btn:last-child{
     animation-delay: 0.9s
+}
+
+.nav__dot { 
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute; /*가장 가까운 relative 부모를 기준으로 이동 position:relative; 를 해주면 부모가 된다.*/
+    background-color: tomato;
+    left: 30px;
 }

@@ -1,20 +1,11 @@
 .badge {
     background-color: tomato;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight: 600;
-}
-
-.dot {  /*  .nav_notification 클래스 재사용 */
-    width: 6px;
-    height: 6px;
-    border-radius: 3px;
-    left: 35px;
-    bottom: 30px;
-    background-color: tomato;
 }
