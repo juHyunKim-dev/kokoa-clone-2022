@@ -98,11 +98,33 @@
     display: flex;
     align-items: center;
     position: absolute;  /*absolute childeren은 relative father가 필요함, 화면을 floating*/
-    bottom:105px;
-    right:31px;
+    bottom:-2px;
+    right:30px;
     font-size: 13px;
 }
 
 .open-post__heart-count span {
     margin-left: 3px;
+}
+
+
+@keyframes heartBeat {
+    0%{
+        color:white;
+        transform: none;
+    }
+    50%{
+        color:red;
+        transform: scale(1.5);
+    }
+    100%{
+        color:white;
+        transform: none;
+    }
+}
+
+
+.open-post__heart-count:hover i { /* open-post__heart-count의 어느곳이든 hover되면 i(icon)에 애니메이션이 실행됨.*/
+    will-change: transform; /*그래픽카드를 이용해서 애니메이션을 가속화, 동작을 부드럽게 만듦*/
+    animation: heartBeat 1s linear infinite;
 }
