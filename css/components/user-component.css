@@ -1,5 +1,6 @@
 .user-component {
     justify-content: space-between;
+    padding: 2.5px 3px;
 }
 
 
@@ -63,4 +64,15 @@
 
 .user-component__subtitle i {
     color: #FF5B49;
+}
+
+.user-component__friend {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.user-component__friend:hover {
+    background-color: white;
+    border: 1px solid var(--yellow);
+    box-shadow: 2px 2px 2px 2px var(--yellow);
 }

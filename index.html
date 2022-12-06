@@ -27,11 +27,24 @@
       <p class="welcome-header__text">
         If you have a Kokoa Account, log in with your email or phone number.
       </p>
+      <img src="photo/resource.gif" class="welcome-header__img" />
     </header>
 
     <form action="friends.html" method="get" id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input name="username" type="password" placeholder="Password" />
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="Email or phone number"
+        minlength="5"
+      />
+      <input
+        name="password"
+        type="password"
+        required
+        placeholder="Password"
+        minlength="8"
+      />
       <input name="password" type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
       <a href="#">Find Kokoa Account or Password</a>

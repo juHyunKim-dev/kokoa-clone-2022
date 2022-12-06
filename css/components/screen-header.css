@@ -35,15 +35,34 @@
 }
 
 
+@keyframes color-rotate__ChangeIcon {
+    from{
+        transform: none;
+    }
+    to{
+        color:burlywood;
+        transform: rotateZ(360deg) scale(1.2);
+    }
+}
+
+
+.screen-header__icons i:hover {
+    will-change: transform;
+    animation: color-rotate__ChangeIcon 0.3s linear forwards;
+}
+
+
 @keyframes rotateCog {
     from {
         transform: none;
     }
     to {
-        transform: rotateZ(360deg);
+        color:burlywood;
+        transform: rotateZ(120deg) scale(1.2);
+
     }
 }
 
 .screen-header__icons .fa-cog:hover {
-    animation: rotateCog 1.5s linear infinite;
+    animation: rotateCog 0.3s linear forwards ;
 }

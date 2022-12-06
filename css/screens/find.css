@@ -93,14 +93,14 @@
 .open-post__heart-count {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 5px 9px;
+    padding: 4px 7px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     position: absolute;  /*absolute childeren은 relative father가 필요함, 화면을 floating*/
-    bottom:-2px;
-    right:30px;
-    font-size: 13px;
+    bottom: 6px;
+    right:5px;
+    font-size: 12px;
 }
 
 .open-post__heart-count span {

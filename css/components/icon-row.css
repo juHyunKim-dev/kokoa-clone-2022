@@ -21,3 +21,24 @@
 .icon-row__icon span {
     margin-top: 17px;
 }
+
+.icon_hover {
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+@keyframes iconFlip {
+    from{
+        transform: none;
+    }
+    to{
+        color: burlywood;
+        transform:rotateY(360deg);
+    }
+}
+
+.icon_hover:hover i {
+    animation: iconFlip 0.8s ease-in-out forwards;
+}
+
